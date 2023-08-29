@@ -1,0 +1,15 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+
+  datasource: # DB
+    url: jdbc:oracle:thin:@db202308212023_high?TNS_ADMIN=C:/opt/OracleCloudWallet/Wallet_DB202308212023
+    username: admin
+    password: Qwer123456789!@
+    driver-class-name: oracle.jdbc.OracleDriver
+
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
