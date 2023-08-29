@@ -1,18 +1,29 @@
 package com.study.board.vo;
 
 import lombok.Data;
-import java.util.Collection;
-import java.util.Collections;
 
+// 전체 User 엔티티 클래스
 @Data // @Getter, @Setter, @RequiredArgsConstructor, @ToString, @EqualsAndHashCode 어노테이션을 한꺼번에 설정해주는 어노테이션
 public class UserVo {
     private int userNo;
     private String userId;
     private String userPw;
     private String userName;
+    private Grade grade;
     private String userAuth;
     private String appendDate;
     private String updateDate;
+
+    public UserVo(int userNo, String userId, String userPw, String userName, Grade grade, String userAuth, String appendDate, String updateDate) {
+        this.userNo = userNo;
+        this.userId = userId;
+        this.userPw = userPw;
+        this.userName = userName;
+        this.grade = grade;
+        this.userAuth = userAuth;
+        this.appendDate = appendDate;
+        this.updateDate = updateDate;
+    }
 
     public int getUserNo() {
         return userNo;
@@ -44,6 +55,14 @@ public class UserVo {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public Grade getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Grade grade) {
+        this.grade = grade;
     }
 
     public String getUserAuth() {
