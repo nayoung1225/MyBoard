@@ -1,7 +1,6 @@
 package com.study.board.domain;
 
 public class Member {
-
     private Long id;
     private String name;
 

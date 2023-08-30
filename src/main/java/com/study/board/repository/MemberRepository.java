@@ -10,7 +10,7 @@ import java.util.Optional;
 public interface MemberRepository{
 
     // 회원생성
-    Member save(Member user);
+    Member save(Member member);
 
     // id로 회원검색
     Optional<Member> findById(Long id);
