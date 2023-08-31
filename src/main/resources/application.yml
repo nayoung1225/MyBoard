@@ -9,7 +9,6 @@ spring:
     password: Qwer123456789!@
     driver-class-name: oracle.jdbc.OracleDriver
 
-
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
