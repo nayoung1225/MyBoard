@@ -57,6 +57,8 @@ dependencies {
 	testImplementation 'org.springframework.security:spring-security-test'
 
 	implementation('org.springframework.boot:spring-boot-starter-oauth2-client') // 스프링 시큐리티 의존성
+
+	implementation 'jakarta.inject:jakarta.inject-api:2.0.1' //추가
 }
 
 tasks.named('test') {
